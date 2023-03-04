@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class MyFilter implements Filterable{
+public class MyFilter implements Filterable {
     public int ecoValue;
 
     public MyFilter(int ecoValue) {
@@ -12,10 +12,10 @@ public class MyFilter implements Filterable{
 
         int eco = 0;
 
-        for (User user:
-             unsortedUsers) {
+        for (User user :
+                unsortedUsers) {
 
-            for (int counter:
+            for (int counter :
                     user.counters) {
                 if (counter > ecoValue) {
                     user.isEco = false;
@@ -30,8 +30,8 @@ public class MyFilter implements Filterable{
         User[] sortedUsers = new User[eco];
 
         int counter = 0;
-        for (User user:
-             unsortedUsers) {
+        for (User user :
+                unsortedUsers) {
             if (user.isEco) {
                 sortedUsers[counter] = new User(user);
                 counter++;

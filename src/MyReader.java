@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class MyReader implements Readable{
+public class MyReader implements Readable {
     @Override
     public User[] read(File file) throws IOException {
 
@@ -15,7 +15,6 @@ public class MyReader implements Readable{
         String[] names = fileStream.get(0).split("\\|");
 
         for (int counter = 1; counter < fileStream.size(); counter++) {
-
 
 
             String[] userString = fileStream.get(counter).split("\\|");

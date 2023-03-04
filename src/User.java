@@ -13,7 +13,7 @@ public class User {
     }
 
     public User(User user) {
-        this.ID = user.ID;;
+        this.ID = user.ID;
         this.name = user.name;
         this.counters = user.counters.clone();
         this.countersNames = user.countersNames;
